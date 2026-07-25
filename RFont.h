@@ -730,7 +730,7 @@ void RFont_font_data_free(RFont_renderer* renderer, RFont_font* font) {
 
 void RFont_font_free_ptr(RFont_renderer* renderer, RFont_font* font) {
    RFONT_FREE(font->src->info.data);
-   RFont_font_free_data_ptr(renderer, font)
+   RFont_font_free_data_ptr(renderer, font);
 }
 
 void RFont_font_free(RFont_renderer* renderer, RFont_font* font) {
